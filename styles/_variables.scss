@@ -1,0 +1,12 @@
+$mainCol: #F1F3F6;
+$shadow: #3754AA;
+$highlight: #ffffff;
+$dark: rgb(20, 20, 20);
+$light: rgb(72, 72, 107);
+$lightest:rgb(166, 166, 192);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

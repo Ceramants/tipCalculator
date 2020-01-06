@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    background-color: $mainCol;
+    margin: 0;
+    box-sizing: border-box;
+
+    main{
+        
+        @include flexCenter();
+
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+
+        hr{
+            border: 2px solid $mainCol;
+            width: 80%;
+            box-shadow: 
+            4px 4px 8px 2px rgba(55, 84, 170, 0.123),
+            -3px -3px 8px 2px rgba(255, 255, 255, 0.979);;
+        }
+    }
+}

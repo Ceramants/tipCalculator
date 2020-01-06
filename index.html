@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:500&display=swap" rel="stylesheet">
+    <title>Tip Calculator App</title>
+</head>
+<body>
+    <main>
+        <header>Tip Calculator</header>
+        <section id='container'>
+            <table class='row-one'>
+                <tr>
+                  <td class='left-col'>Total Bill:</td>
+                  <td class='right-col'><input type="text" placeholder="Enter your total bill..." id="total-bill"></td>
+                </tr>
+                <tr>
+                  <td class='left-col'>Tip:</td>
+                  <td class='right-col'>
+                      <input type="range" value="0" id="tip-input" class="range">
+                      <span id="tip-output">0%</span>
+                    </td>
+                </tr>
+                <tr>
+                  <td class='left-col'>Split <span>(number of people)</span></td>
+                  <td class='right-col'>
+                      <input type="range" value="1" min="1" max="30" id="split-input" class="range">
+                      <span id="split-output">1</span>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table class='row-two'>
+                <tr>
+                  <td class='left-col'>New bill: <span>(per person)</span></td>
+                  <td class='right-col'><span id="new-bill">£0</span></td>
+                </tr>
+                <tr>
+                  <td class='left-col'>Tip Amount: <span>(per person)</span></td>
+                  <td class='right-col'><span id="tip-each">£0</span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
