@@ -8,9 +8,8 @@ document.getElementById('container').onchange = function(){
     const newBillEach = (bill + tipValue) / split;
     const tipEach = tipValue / split;
 
-    document.getElementById('tip-output').innerHTML = `${tipPercent}%`;
-    document.getElementById('split-output').innerHTML = `${split}`;
-    document.getElementById('new-bill').innerHMTL = '£'+ newBillEach.toFixed(2);
+    document.getElementById('tip-output').innerHTML = tipPercent +'%';
+    document.getElementById('split-output').innerHTML = split;
+    document.getElementById('new-bill').innerHTML = '£'+ newBillEach.toFixed(2);
     document.getElementById('tip-each').innerHTML = '£' + tipEach.toFixed(2);
-};
-
+}
